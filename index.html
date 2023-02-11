@@ -17,6 +17,11 @@
         <li><a href="#">Feature</a></li>
         <li class="ctn"><a href="#">Contact us</a></li>
       </ul>
+      <img
+        class="menu-button"
+        src="https://cdn-icons-png.flaticon.com/512/5949/5949404.png"
+        alt=""
+      />
     </div>
     <header>
       <div class="header-content">
@@ -26,5 +31,12 @@
         <a href="" class="ctn">Learn More</a>
       </div>
     </header>
+    <script>
+      const menuBnt = document.querySelector(".menu-button");
+      const navLinks = document.querySelector(".nav-links");
+      menuBnt.addEventListener("click", () => {
+        navLinks.classList.toggle("mobile-menu");
+      });
+    </script>
   </body>
 </html>
